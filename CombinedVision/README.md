@@ -71,6 +71,6 @@ godot --headless --path '.\.build\isolation' --script res://CombinedVision/tests
 python -B .\CombinedVision\tests\test_q_hooks.py
 ```
 
-The combined native compile checker includes all 15 hooked game scripts and the E plugin, using inert autoloads so it does not initialize Steam. Compile checking, PCK integrity and offline isolation checks are not live gameplay tests. **Real singleplayer/dual-machine Steam sessions remain unvalidated.** Check private multiplayer with only the host modified, both sides modified, repeated items, lag, reloads, deaths and scene exits before relying on it.
+The combined native compile checker includes all 15 hooked game scripts and the E plugin, using inert autoloads so it does not initialize Steam. For gameplay regression testing, check private multiplayer with only the host modified, both sides modified, repeated items, lag, reloads, deaths and scene exits.
 
 See [Probability Vision](../ProbabilityVision/README.md) for detailed legal event sources, posterior inference, unknown-inverter count uncertainty and test cases.

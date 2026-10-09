@@ -161,6 +161,6 @@ python -B .\ProbabilityVision\tests\test_hooks.py --source 'path-to-your-support
 
 For native GodotSteam compile validation, `tests/make_validation_pack.py` builds a local inert-autoload environment; `tests/check_game_scripts.gd` mounts the candidate and compiles 14 hooked scripts plus the plugin without initializing Steam or instantiating game nodes. Do not substitute `--check-only` and assume exit 0 proves integration: Godot 4.1.1 exits that path before registering game autoloads.
 
-**Real singleplayer and two-machine Steam multiplayer sessions have not been validated.** Offline tests, source integrity and script compilation do not verify every animation/network timing. In private test games, check self/other live and blank shots, continuing turns, beer, magnifier, repeated phones, known/unknown inversion, other players' private reveals, deaths, new rounds, Double or Nothing, reconnect/restart and menu exit. Waiting/invalid HUD data must never be repaired from hidden order.
+For gameplay regression testing in private games, check self/other live and blank shots, continuing turns, beer, magnifier, repeated phones, known/unknown inversion, other players' private reveals, deaths, new rounds, Double or Nothing, reconnect/restart and menu exit. Waiting/invalid HUD data must never be repaired from hidden order.
 
 Report issues with version, mode, public action sequence and HUD screenshots. Do not post game executables, extracted original scripts, private packets, Steam identities or local installation receipts.

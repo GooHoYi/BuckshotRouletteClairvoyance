@@ -44,7 +44,7 @@ df2f8a31bd469438a1a29f831945ccea7b26963ab735f73b32936792207b1663
 
 Other versions must be inspected and ported, not bypassed by removing the version guard. This is a resource patch built with the game's original engine, not an unverified BepInEx/GDWeave integration.
 
-See [Probability Vision](ProbabilityVision/README.md) for the information boundary, probability model, real hook locations, configuration and tests. See [Q/E coexistence](CombinedVision/README.md) for isolated displays, public-source builds, installation and validation limitations.
+See [Probability Vision](ProbabilityVision/README.md) for the information boundary, probability model, real hook locations, configuration and tests. See [Q/E coexistence](CombinedVision/README.md) for isolated displays, public-source builds, installation and validation guidance.
 
 ### 中文概要
 
@@ -52,4 +52,4 @@ See [Probability Vision](ProbabilityVision/README.md) for the information bounda
 
 两套显示和状态互不传递：即使 Q 已显示下一发答案，E 也不会因此变成100%或新增 Known。组合版使用不同提示层、错开的默认位置，并保留 Q 给直接查看。
 
-源码可从用户自有的原版 EXE 构建三个版本，不依赖不可公开分发的预先修改版 EXE。仓库不包含原游戏、完整提取脚本或个人备份。真实单人/双机联机对局仍待验证；离线运行、隔离、适配器及引擎编译检查不能替代实战验证。
+源码可从用户自有的原版 EXE 构建三个版本，不依赖不可公开分发的预先修改版 EXE。仓库不包含原游戏、完整提取脚本或个人备份。详细测试步骤见各模块的 README。
